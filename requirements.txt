@@ -73,3 +73,10 @@ xlwt==1.3.0
 yarl==1.5.1
 PyYAML==5.3.1
 tqdm==4.51.0
+fastapi
+sitemapgen==0.9.8
+orjson
+pywebio
+pywebio_battery
+aiofiles
+websockets

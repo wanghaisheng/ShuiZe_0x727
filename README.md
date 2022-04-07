@@ -384,3 +384,13 @@ ShuiZe（水泽） 是一个免费且开源的项目，我们欢迎任何人为�
 [![Stargazers over time](https://starchart.cc/0x727/ShuiZe_0x727.svg)](https://starchart.cc/0x727/ShuiZe_0x727)
 
 <img align='right' src="https://profile-counter.glitch.me/ShuiZe_0x727/count.svg" width="200">
+
+
+
+>./Plugins/infoGather/subdomain/ksubdomain/ksubdomain_linux
+
+./Plugins/infoGather/subdomain/ksubdomain/ksubdomain_linux: error while loading shared libraries: libpcap.so.0.8: cannot open shared object file: No such file or directory
+
+RUN apt-get install -y libpcap-dev
+
+ python3 ShuiZe.py -d http://www.cettire.com
