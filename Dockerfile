@@ -28,4 +28,4 @@ RUN apt-get update \
 
 # https://stackoverflow.com/questions/30663245/tcpdump-reports-error-in-docker-container-thats-started-with-privileged
 RUN apt-get -y install tcpdump
-RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
+# RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
