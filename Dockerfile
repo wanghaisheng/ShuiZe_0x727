@@ -18,14 +18,14 @@ RUN apt-get update \
     && apt-get install flex bison -y \
     && apt-get clean
 
-RUN wget http://www.tcpdump.org/release/libpcap-1.10.1.tar.gz && tar xzf libpcap-1.10.1.tar.gz \
-    && cd libpcap-1.10.1 \
-    && ./configure && make install
+# RUN wget http://www.tcpdump.org/release/libpcap-1.10.1.tar.gz && tar xzf libpcap-1.10.1.tar.gz \
+#     && cd libpcap-1.10.1 \
+#     && ./configure && make install
 # RUN pkexec chown root: /usr/bin/sudo 
 # RUN pkexec chmod 4755 /usr/bin/sudo
 
 
 
 # https://stackoverflow.com/questions/30663245/tcpdump-reports-error-in-docker-container-thats-started-with-privileged
-# RUN apt-get -y install tcpdump
-# RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
+RUN apt-get -y install tcpdump
+RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
