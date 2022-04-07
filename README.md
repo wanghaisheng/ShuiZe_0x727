@@ -394,3 +394,6 @@ ShuiZe（水泽） 是一个免费且开源的项目，我们欢迎任何人为�
 RUN apt-get install -y libpcap-dev
 
  python3 ShuiZe.py -d http://www.cettire.com
+
+
+https://github.com/coder/code-server/discussions/4214

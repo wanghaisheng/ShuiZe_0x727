@@ -27,10 +27,10 @@ User root:root
 
 
 # https://stackoverflow.com/questions/30663245/tcpdump-reports-error-in-docker-container-thats-started-with-privileged
-RUN apt-get -y install tcpdump
 # RUN chmod 777 /usr/bin/tcpdump && tcpdump -i eth0
 
 
 RUN chown root:root /usr/bin/sudo
 
 RUN chmod 4755 /usr/bin/sudo
+RUN apt-get -y install tcpdump
