@@ -1,0 +1,11 @@
+{
+        "name": "subdomain-discovery",
+        "description": "crawl subdomain ,sitemaps",
+        "keywords": ["subdomain"],
+        "website": "https://github.com/wanghaisheng/shop-connan",
+        "repository": "https://github.com/wanghaisheng/shop-connan",
+        "stack": "container"    
+    }
+    
+
+   
