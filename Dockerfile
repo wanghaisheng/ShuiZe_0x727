@@ -7,7 +7,7 @@ COPY . /app
 
 RUN apt-get update
 RUN apt install git --fix-missing 
-RUN apt install -y libcap-dev libcap-ng-dev 
+RUN apt-get install -y libpcap-dev
 RUN rm /usr/bin/python3
 RUN ln -s /usr/local/bin/python3.8 /usr/bin/python3
 RUN python3 -m pip install --upgrade pip
