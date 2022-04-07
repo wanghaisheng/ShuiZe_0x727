@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-
+RUN chmod -R 777 /app
 RUN apt-get update
 RUN apt install git --fix-missing 
 # RUN apt-get install -y libpcap-dev sudo policykit-1
@@ -24,3 +24,8 @@ RUN wget http://www.tcpdump.org/release/libpcap-1.10.1.tar.gz && tar xzf libpcap
 # RUN pkexec chown root: /usr/bin/sudo 
 # RUN pkexec chmod 4755 /usr/bin/sudo
 
+
+
+# https://stackoverflow.com/questions/30663245/tcpdump-reports-error-in-docker-container-thats-started-with-privileged
+# RUN apt-get -y install tcpdump
+# RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
