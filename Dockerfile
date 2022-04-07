@@ -13,7 +13,7 @@ RUN ln -s /usr/local/bin/python3.8 /usr/bin/python3
 RUN python3 -m pip install --upgrade pip
 RUN chmod 777 docker_build.sh
 RUN ./docker_build.sh
-
+User root:root
 # RUN apt-get update \
 #     && apt-get install flex bison -y \
 #     && apt-get clean
@@ -28,5 +28,9 @@ RUN ./docker_build.sh
 
 # https://stackoverflow.com/questions/30663245/tcpdump-reports-error-in-docker-container-thats-started-with-privileged
 RUN apt-get -y install tcpdump
-# RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
-RUN chmod 777 /usr/bin/tcpdump
+# RUN chmod 777 /usr/bin/tcpdump && tcpdump -i eth0
+
+
+RUN chown root:root /usr/bin/sudo
+
+RUN chmod 4755 /usr/bin/sudo
