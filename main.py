@@ -13,6 +13,8 @@ import pywebio_battery as battery
 from app.constants import *
 import os
 from ShuiZe import *
+from Plugins.infoGather.subdomain.ksubdomain.ksubdomain import run_ksubdomain
+
 from urllib.parse import urlparse
 from subprocess import Popen
 app = FastAPI()
@@ -40,7 +42,7 @@ def domainall(domain):
     return urls    
 @apiapp.get("/api/", response_class=ORJSONResponse)
 async def sitemap(url:str):
-    urls =callKsubdomain(url)
+    urls =run_ksubdomain(url)
     return {"urls": urls}
 
 
@@ -87,7 +89,7 @@ def index() -> None:
         with battery.redirect_stdout():
             print('crack url',url)
 
-            urls =callKsubdomain(url)
+            urls =run_ksubdomain(url)
 
     print(urls,'====')
     clear('loading')
