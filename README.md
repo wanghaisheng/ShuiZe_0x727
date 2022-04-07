@@ -7,7 +7,7 @@
 
 ## 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wanghaisheng/subdomain-discovery-rest)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wanghaisheng/ShuiZe_0x727)
 
 ## 0x01 介绍
 
